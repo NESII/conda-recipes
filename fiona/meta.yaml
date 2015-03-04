@@ -33,7 +33,7 @@ requirements:
     - click
     - six
     - numpy
-    - gdal
+    - gdal ==patch_1.11.1
 
   run:
     - python
@@ -41,7 +41,7 @@ requirements:
     - click
     - six
     - numpy
-    - gdal
+    - gdal ==patch_1.11.1
 
 test:
   # Python imports
