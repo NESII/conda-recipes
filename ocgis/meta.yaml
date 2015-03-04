@@ -17,14 +17,14 @@ requirements:
         - netcdf4
         - shapely
         - fiona
-        - gdal==patch_1.11.1
+        - gdal ==patch_1.11.1
     run:
         - python
         - numpy
         - netcdf4
         - shapely
         - fiona
-        - gdal==patch_1.11.1
+        - gdal ==patch_1.11.1
         - icclim
         - cfunits
         - rtree
