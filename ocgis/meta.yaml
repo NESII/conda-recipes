@@ -28,6 +28,7 @@ requirements:
         - icclim
         - cfunits
         - rtree
+        - esmpy
 test:
     # export GDAL_DATA=${prefix}/share/gdal
     #imports:
