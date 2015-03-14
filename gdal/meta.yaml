@@ -26,6 +26,7 @@ requirements:
     - udunits
     - jasper
     - sqlite
+    - patch
   run:
     - python
     - numpy
