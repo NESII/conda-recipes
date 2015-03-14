@@ -12,7 +12,7 @@
 --without-pam \
 --with-python \
 --disable-rpath
-make -j 4
+make -j ${CPUCOUNT}
 make install
 
 # Copy data files 
