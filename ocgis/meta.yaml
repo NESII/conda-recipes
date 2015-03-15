@@ -18,7 +18,6 @@ requirements:
         - shapely
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
-        - nose
     run:
         - python
         - numpy
@@ -30,7 +29,9 @@ requirements:
         - cfunits
         - rtree
         - esmpy =={{environ['CBUILD_OCGIS_ESMF_VERSION']}}
-#test:
+test:
+  requires:
+    - nose
 #    # export GDAL_DATA=${prefix}/share/gdal
 #    #imports:
 #    #    - ocgis
