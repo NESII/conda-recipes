@@ -36,6 +36,7 @@ test:
 
     commands:
         - cd ${SRC_DIR}
+        - ls
         - ${PYTHON} setup.py test
 
 about:
