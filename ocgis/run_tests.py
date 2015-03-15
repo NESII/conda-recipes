@@ -1,0 +1,2 @@
+import nose
+import ocgis
