@@ -37,7 +37,7 @@ test:
     commands:
         - cd ${SRC_DIR}
         - ls
-        - ${PYTHON} setup.py test
+        - python setup.py test
 
 about:
     home: http://ncpp.github.io/ocgis/install.html#installing-openclimategis
