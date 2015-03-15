@@ -1,7 +1,10 @@
 import nose
 from nose.plugins.plugintest import run
 import ocgis
-from ocgis.test.test_simple import test_simple
+from ocgis.test import test_simple
+import sys
 
 
-run(test_simple)
+module_name =test_simple.__file__
+
+nose.run(argv=[sys.argv[0], module_name, '-v'])
