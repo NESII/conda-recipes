@@ -15,12 +15,12 @@ requirements:
     - python
     - setuptools
     - udunits
-    - netcdf4
+    - netcdf4 ==1.1.1
 
   run:
     - python
     - udunits
-    - netcdf4
+    - netcdf4 ==1.1.1
 
 about:
   home: https://code.google.com/p/cfunits-python/
