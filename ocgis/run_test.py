@@ -11,7 +11,7 @@ from ocgis.test.test_misc import test_dependency_versions
 #tdk: make this work for simple and all tests
 # module_name = test_dependency_versions.__file__
 os.environ['OCGIS_DIR_SHPCABINET'] = os.path.expanduser('~/data/ocgis_test_data/shp')
-os.environ['OCGIS_DIR_TESTDATA'] = os.path.expanduser('~/data/ocgis_test_data/nc')
+os.environ['OCGIS_DIR_TEST_DATA'] = os.path.expanduser('~/data/ocgis_test_data/nc')
 result = nose.run(argv=[sys.argv[0], module_name, '-v', '-a', '!slow,!remote,!esmpy7'])
 if not result:
     sys.exit(1)
