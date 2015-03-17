@@ -7,7 +7,7 @@ import os
 from ocgis.test.test_real_data import test_narccap
 
 from cfunits import Units
-module_name = test_narccap.__file__+':TestRotatedPole'
+module_name = test_narccap.__file__+':TestRotatedPole.test_clip_aggregate'
 print(module_name)
 from ocgis.test.test_misc import test_dependency_versions
 #tdk: make this work for simple and all tests
