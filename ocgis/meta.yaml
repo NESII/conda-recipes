@@ -13,14 +13,14 @@ requirements:
     build:
         - python
         - setuptools
-        - numpy
+        - numpy ==1.8.2
         - netcdf4
         - shapely
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
     run:
         - python
-        - numpy
+        - numpy ==1.8.2
         - netcdf4
         - shapely
         - fiona ==1.4.8
