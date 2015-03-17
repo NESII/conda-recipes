@@ -4,10 +4,11 @@ import ocgis
 from ocgis import test
 import sys
 import os
+from ocgis.test.test_ocgis.test_interface.test_base import test_crs
 from ocgis.test.test_real_data import test_narccap
 
 from cfunits import Units
-module_name = test_narccap.__file__+':TestRotatedPole.test_clip_aggregate'
+module_name = test_crs.__file__+':TestCFRotatedPole'
 print(module_name)
 from ocgis.test.test_misc import test_dependency_versions
 #tdk: make this work for simple and all tests
