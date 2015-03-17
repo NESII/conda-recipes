@@ -11,4 +11,4 @@ from ocgis.test.test_misc import test_dependency_versions
 
 # module_name = test_dependency_versions.__file__
 
-nose.run(argv=[sys.argv[0], module_name, '-v'])
+nose.run(argv=[sys.argv[0], module_name, '-v', '-a', '!slow,!remote,!esmpy7'])
