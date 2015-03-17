@@ -13,7 +13,7 @@ from ocgis.test.test_misc import test_dependency_versions
 os.environ['OCGIS_DIR_SHPCABINET'] = os.path.expanduser('~/data/ocgis_test_data/shp')
 os.environ['OCGIS_DIR_TEST_DATA'] = os.path.expanduser('~/data/ocgis_test_data/nc')
 from ocgis import env
-print env.DIR_TEST_DATA
+print(env.DIR_TEST_DATA)
 sys.exit(1)
 result = nose.run(argv=[sys.argv[0], module_name, '-v', '-a', '!slow,!remote,!esmpy7'])
 if not result:
