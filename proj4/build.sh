@@ -7,6 +7,5 @@ unzip ${DFN} -d ./nad/
 ./configure --prefix=$PREFIX --without-jni
 
 make -j ${CPUCOUNT}
+make check
 make install
-
-cp -r ./nad ${PREFIX}
