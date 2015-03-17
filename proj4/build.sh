@@ -8,3 +8,5 @@ unzip ${DFN} -d ./nad/
 
 make -j ${CPUCOUNT}
 make install
+
+cp -r ./nad ${PREFIX}
