@@ -8,7 +8,7 @@ import os
 from cfunits import Units
 module_name = os.path.split(test.__file__)[0]
 from ocgis.test.test_misc import test_dependency_versions
-
+#tdk: make this work for simple and all tests
 # module_name = test_dependency_versions.__file__
-
+os.environ['OCGIS_DIR_SHPCABINET'] = os.path.expanduser('~/data/ocgis_test_data/shp')
 nose.run(argv=[sys.argv[0], module_name, '-v', '-a', '!slow,!remote,!esmpy7'])
