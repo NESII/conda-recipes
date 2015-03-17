@@ -5,6 +5,8 @@ from ocgis import test
 import sys
 import os
 
+import pdb;pdb.set_trace()
+
 from cfunits import Units
 module_name = os.path.split(test.__file__)[0]
 from ocgis.test.test_misc import test_dependency_versions
