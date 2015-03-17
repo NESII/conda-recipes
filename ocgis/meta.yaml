@@ -32,7 +32,7 @@ requirements:
 test:
   requires:
     - nose
-    - ipdb
+    - ipython
 #    # export GDAL_DATA=${prefix}/share/gdal
 #    #imports:
 #    #    - ocgis
