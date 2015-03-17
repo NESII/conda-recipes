@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export DFN="proj-datumgrid-1.5.zip"
-wget wget http://download.osgeo.org/proj/${DFN}
+wget http://download.osgeo.org/proj/${DFN}
 unzip ${DFN} -d ./nad/
 
 ./configure --prefix=$PREFIX --without-jni
