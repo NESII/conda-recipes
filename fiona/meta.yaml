@@ -33,6 +33,7 @@ requirements:
     - click
     - six
     - numpy
+    - cligj
     - gdal ==patch_1.11.1
 
   run:
@@ -41,6 +42,7 @@ requirements:
     - click
     - six
     - numpy
+    - cligj
     - gdal ==patch_1.11.1
 
 test:
