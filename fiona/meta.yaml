@@ -1,11 +1,11 @@
 package:
   name: fiona
-  version: !!str 1.5.1
+  version: !!str 1.4.8
 
 source:
-  fn: Fiona-1.5.1.tar.gz
-  url: https://pypi.python.org/packages/source/F/Fiona/Fiona-1.5.1.tar.gz
-  md5: e976183d253c33c0c66d67753c52b1a7
+  fn: Fiona-1.4.8.tar.gz
+  url: https://pypi.python.org/packages/source/F/Fiona/Fiona-1.4.8.tar.gz
+  md5: 0fa065f5420e6901570ef87cea3cba35
 #  patches:
    # List any patch files here
    # - fix.patch
@@ -33,7 +33,6 @@ requirements:
     - click
     - six
     - numpy
-    - cligj
     - gdal ==patch_1.11.1
 
   run:
@@ -42,7 +41,6 @@ requirements:
     - click
     - six
     - numpy
-    - cligj
     - gdal ==patch_1.11.1
 
 test:
