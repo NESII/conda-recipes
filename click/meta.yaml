@@ -53,7 +53,7 @@ test:
 about:
   home: http://github.com/mitsuhiko/click
   license: BSD License
-  summary: 'A simple wrapper around optparse for powerful command line utilities.'
+  summary: A simple wrapper around optparse for powerful command line utilities.
 
 # See
 # http://docs.continuum.io/conda/build.html for

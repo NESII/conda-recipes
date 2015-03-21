@@ -18,7 +18,7 @@ requirements:
     - numpy
     - xerces-c
     - geos
-    - proj4
+    - proj4 ==4.9.1
     - hdf5
     - libnetcdf
     - libpng
@@ -31,7 +31,7 @@ requirements:
     - numpy
     - xerces-c
     - geos
-    - proj4
+    - proj4 ==4.9.1
     - hdf5
     - libnetcdf
     - libpng
