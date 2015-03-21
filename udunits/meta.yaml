@@ -25,3 +25,4 @@ test:
 about:
   home: http://www.unidata.ucar.edu/software/udunits/
   summary: The UDUNITS package supports units of physical quantities.
+  license: https://github.com/Unidata/UDUNITS-2/blob/master/COPYRIGHT
