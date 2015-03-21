@@ -25,6 +25,7 @@ requirements:
 about:
   home: https://code.google.com/p/cfunits-python/
   license: MIT License
+  summary: A Python interface to UNIDATA's Udunits-2 package with CF extensions.
 
 # See
 # http://docs.continuum.io/conda/build.html for

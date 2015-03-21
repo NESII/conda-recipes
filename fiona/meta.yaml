@@ -65,7 +65,7 @@ test:
 about:
   home: http://github.com/Toblerity/Fiona
   license: BSD License
-  summary: 'Fiona reads and writes spatial data files'
+  summary: Fiona is OGR's neat, nimble, no-nonsense API for Python programmers.
 
 # See
 # http://docs.continuum.io/conda/build.html for
