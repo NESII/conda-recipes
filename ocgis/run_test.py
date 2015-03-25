@@ -4,10 +4,10 @@ import os
 
 test_target = os.environ.get('CBUILD_OCGIS_TEST_TARGET')
 if test_target == 'simple' or test_target is None:
-    simple = True
+    attrs = 'simple'
 elif test_target == 'all':
-    simple = False
+    simple = '!slow,!remote,!esmpy7'
 else:
     raise NotImplementedError(test_target)
 
-run(simple=simple)
+run(attrs=attrs)
