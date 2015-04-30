@@ -28,7 +28,7 @@ requirements:
         - icclim
         - cfunits
         - rtree
-        - esmpy =={{environ['CBUILD_OCGIS_ESMF_VERSION']}}
+#        - esmpy =={{environ['CBUILD_OCGIS_ESMF_VERSION']}}
 test:
   requires:
     - nose
