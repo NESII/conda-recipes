@@ -14,13 +14,13 @@ requirements:
         - python
         - setuptools
         - numpy
-        - netcdf4
+        - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
 #        - ctypes
 
     run:
         - python
         - numpy
-        - netcdf4
+        - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
 #        - ctypes
 
 test:

@@ -14,14 +14,14 @@ requirements:
         - python
         - setuptools
         - numpy
-        - netcdf4
+        - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
         - shapely
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
     run:
         - python
         - numpy
-        - netcdf4
+        - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
         - shapely
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
