@@ -15,12 +15,12 @@ requirements:
     - python
     - setuptools
     - udunits
-    - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
+    - netcdf4 =={{environ['CBUILD_NETCDF4_VERSION']}}
 
   run:
     - python
     - udunits
-    - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
+    - netcdf4 =={{environ['CBUILD_NETCDF4_VERSION']}}
 
 about:
   home: https://code.google.com/p/cfunits-python/

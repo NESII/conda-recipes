@@ -14,21 +14,21 @@ requirements:
         - python
         - setuptools
         - numpy
-        - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
+        - netcdf4 =={{environ['CBUILD_NETCDF4_VERSION']}}
         - shapely
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
     run:
         - python
         - numpy
-        - netcdf4 =={{environ['CBUILD_OCGIS_NETCDF4_VERSION']}}
+        - netcdf4 =={{environ['CBUILD_NETCDF4_VERSION']}}
         - shapely
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
         - icclim
         - cfunits
         - rtree
-#        - esmpy =={{environ['CBUILD_OCGIS_ESMF_VERSION']}}
+        - esmpy =={{environ['CBUILD_OCGIS_ESMF_VERSION']}}
 test:
   requires:
     - nose
