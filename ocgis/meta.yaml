@@ -26,7 +26,7 @@ requirements:
         - fiona ==1.4.8
         - gdal ==patch_1.11.1
         - icclim
-        - cfunits
+        - cfunits ==0.9.6s
         - rtree
         - esmpy =={{environ['CBUILD_OCGIS_ESMF_VERSION']}}
 test:

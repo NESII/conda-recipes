@@ -1,11 +1,13 @@
 package:
   name: cfunits
-  version: 0.9.6
+  version: 0.9.6s
 
 source:
   fn: cfunits-0.9.6.tar.gz
   url: http://cfunits-python.googlecode.com/files/cfunits-0.9.6.tar.gz
   md5: e876322cac0d939b5dd9ce53ad708b7e
+  patches:
+    - cfunits-0_9_6-setuptools-20150501-0954.patch
 
 build:
   number: 2
