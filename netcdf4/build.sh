@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CFLAGS="-I${PREFIX}/include $CFLAGS"
-export LDFLAGS="-L${PREFIX}/lib $LDFLAGS"
+export HDF5_DIR=${PREFIX}
+export NETCDF4_DIR=${PREFIX}
 
 ${PYTHON} setup.py install || exit 1;
