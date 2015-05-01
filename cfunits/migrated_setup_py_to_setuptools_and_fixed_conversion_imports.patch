@@ -4,7 +4,7 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 --- setup.py	(date 1430494792000)
-+++ setup.py	(date 1430495385000)
++++ setup.py	(revision )
 @@ -1,6 +1,5 @@
 -from distutils.core import setup
 +from setuptools import setup
@@ -35,3 +35,21 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 -      requires     = ['netCDF4 (>=0.9.3)', 'numpy (>=1.4)']
 +      install_requires     = ['netCDF4>=0.9.3', 'numpy>=1.4']
    )
+Index: cfunits/cfunits.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cfunits/cfunits.py	(date 1430494792000)
++++ cfunits/cfunits.py	(revision )
+@@ -100,8 +100,8 @@
+ # --------------------------------------------------------------------
+ # Aliases for netCDF4.netcdftime functions
+ # --------------------------------------------------------------------
+-_num2date = netCDF4.netcdftime.num2date
+-_date2num = netCDF4.netcdftime.date2num
++_num2date = netCDF4.num2date
++_date2num = netCDF4.date2num
+ 
+ # --------------------------------------------------------------------
+ # Save some useful units

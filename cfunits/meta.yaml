@@ -7,7 +7,7 @@ source:
   url: http://cfunits-python.googlecode.com/files/cfunits-0.9.6.tar.gz
   md5: e876322cac0d939b5dd9ce53ad708b7e
   patches:
-    - cfunits-0_9_6-setuptools-20150501-0954.patch
+    - migrated_setup_py_to_setuptools_and_fixed_conversion_imports.patch
 
 build:
   number: 2
