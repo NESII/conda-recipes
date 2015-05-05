@@ -24,6 +24,10 @@ requirements:
     - udunits
     - netcdf4 =={{environ['CBUILD_NETCDF4_VERSION']}}
 
+test:
+  imports:
+    - cfunits
+
 about:
   home: https://code.google.com/p/cfunits-python/
   license: MIT License
