@@ -13,9 +13,13 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
  
  def find_package_data_files(directory):
      for root, dirs, files in os.walk(directory):
-@@ -11,14 +10,6 @@
+@@ -9,16 +8,9 @@
+                 filename = os.path.join(root, basename)
+                 if filename.find('/.svn') > -1:
                      continue
-                 yield filename #.replace('cf/', '', 1)
+-                yield filename #.replace('cf/', '', 1)
++                # remove "cfunits" directory name for setuptools to appropriately copy the data files
++                yield filename[8:] #.replace('cf/', '', 1)
  
 -# Check that the dependencies are met
 -for _module in ('netCDF4', 'numpy'):
@@ -28,13 +32,15 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
  version   = '0.9.6'
  etc_files = [f for f in find_package_data_files('cfunits/etc')]
  doc_files = [f for f in find_package_data_files('cfunits/docs')]
-@@ -44,5 +35,5 @@
+@@ -44,5 +36,5 @@
        package_data = {'cfunits': doc_files,
                        'cfunits': etc_files,
                        },
 -      requires     = ['netCDF4 (>=0.9.3)', 'numpy (>=1.4)']
 +      install_requires     = ['netCDF4>=0.9.3', 'numpy>=1.4']
-   )
+-  )
++  )
+\ No newline at end of file
 Index: cfunits/cfunits.py
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
