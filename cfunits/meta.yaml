@@ -1,6 +1,6 @@
 package:
   name: cfunits
-  version: 0.9.6s
+  version: {{environ['CBUILD_CFUNITS_VERSION']}}
 
 source:
   fn: cfunits-0.9.6.tar.gz
@@ -17,12 +17,12 @@ requirements:
     - python
     - setuptools
     - udunits
-    - netcdf4
+    - netcdf4 =={{environ['CBUILD_NETCDF4_PYTHON_VERSION']}}
 
   run:
     - python
     - udunits
-    - netcdf4
+    - netcdf4 =={{environ['CBUILD_NETCDF4_PYTHON_VERSION']}}
 
 test:
   imports:
